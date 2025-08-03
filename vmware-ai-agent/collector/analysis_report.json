@@ -1,9 +1,3 @@
-    "mem.usage.average": "75.00 %",
-    "risk": "High Memory Utilization",
-    "recommendation": "Monitor and optimize memory-intensive processes to prevent potential performance degradation and consider increasing allocated me                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             mory if necessary."
-  }
-(hackathon) lidor@dgx01:~/Hackathon/vmware-ai-agent/collector$ vi analysis_report.json
-[
   {
     "name": "config.name  string  testisoos",
     "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
