@@ -3,8 +3,8 @@ import time
 import os
 
 # Configuration
-ANALYSIS_SCRIPT_PATH = os.path.abspath("analyze_vms.py")
-INTERVAL_SECONDS = 300  # Run every 5 minutes
+ANALYSIS_SCRIPT_PATH = os.path.abspath("insights_engine.py")
+INTERVAL_SECONDS = 120  # Run every 2 minutes
 
 def run_analysis():
     print("📊 Running VM analysis...")
