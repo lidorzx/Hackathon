@@ -1,266 +1,376 @@
 [
   {
     "path": "/Deep-Learning Data-Center/vm/Discovered virtual machine/testisoos",
-    "name": "config.name  string  testisoos",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "testisoos",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.37 %",
+      "mem.usage.average": "2.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Terraform/terraform-01",
-    "name": "config.name  string  terraform-01",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "terraform-01",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "9.77 %",
+      "mem.usage.average": "29.00 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/CA-Training/sub-ca",
-    "name": "config.name  string  sub-ca",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Microsoft Windows Server 2019 (64-bit)"
+    "name": "sub-ca",
+    "power_state": "poweredOn",
+    "guest_os": "Microsoft Windows Server 2019 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.71 %",
+      "mem.usage.average": "7.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Terraform/terraform-04",
-    "name": "config.name  string  terraform-04",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "terraform-04",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "3.77 %",
+      "mem.usage.average": "13.00 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Rancher - Demo - 82/Ubuntu - Agent Worker 1",
-    "name": "config.name  string  Ubuntu - Agent Worker 1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "1",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "Agent": "Worker %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/Ubuntu-LoadBalancer",
-    "name": "config.name  string  Ubuntu-LoadBalancer",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Ubuntu-LoadBalancer",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "1.25 %",
+      "mem.usage.average": "0.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/HaProxy2",
-    "name": "config.name  string  HaProxy2",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 9 (64-bit)"
+    "name": "HaProxy2",
+    "power_state": "poweredOn",
+    "guest_os": "Red Hat Enterprise Linux 9 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.79 %",
+      "mem.usage.average": "1.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Rancher - Demo - 82/Ubuntu - ControlPlane 2",
-    "name": "config.name  string  Ubuntu - ControlPlane 2",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "2",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "ControlPlane": "2 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Terraform/terraform-05",
-    "name": "config.name  string  terraform-05",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "terraform-05",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "12.37 %",
+      "mem.usage.average": "20.00 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Rancher - Demo - 82/Ubuntu - ControlPlane 1",
-    "name": "config.name  string  Ubuntu - ControlPlane 1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "1",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "ControlPlane": "1 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Arch",
-    "name": "config.name  string  Arch",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Other 5.x or later Linux (64-bit)"
+    "name": "Arch",
+    "power_state": "poweredOff",
+    "guest_os": "Other 5.x or later Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/ubuntu partitiontest",
-    "name": "config.name  string  ubuntu partitiontest",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "partitiontest",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Ubuntu-VM",
-    "name": "config.name  string  Ubuntu-VM",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Ubuntu-VM",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/wr2",
-    "name": "config.name  string  wr2",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "wr2",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/KaliLinux",
-    "name": "config.name  string  KaliLinux",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Debian GNU/Linux 11 (64-bit)"
+    "name": "KaliLinux",
+    "power_state": "poweredOn",
+    "guest_os": "Debian GNU/Linux 11 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.69 %",
+      "mem.usage.average": "0.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Terraform/terraform-03",
-    "name": "config.name  string  terraform-03",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "terraform-03",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "14.56 %",
+      "mem.usage.average": "25.00 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/CA-Training/root-ca",
-    "name": "config.name  string  root-ca",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Microsoft Windows Server 2019 (64-bit)"
+    "name": "root-ca",
+    "power_state": "poweredOn",
+    "guest_os": "Microsoft Windows Server 2019 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "2.78 %",
+      "mem.usage.average": "3.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Rancher - Demo - 82/Ubuntu - Agent Worker 2",
-    "name": "config.name  string  Ubuntu - Agent Worker 2",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "2",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "Agent": "Worker %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/apache",
-    "name": "config.name  string  apache",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "apache",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Test-ubuntu-mlxfw",
-    "name": "config.name  string  Test-ubuntu-mlxfw",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Test-ubuntu-mlxfw",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.57 %",
+      "mem.usage.average": "0.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Rancher - Demo - 82/Ubuntu - ControlPlane 3",
-    "name": "config.name  string  Ubuntu - ControlPlane 3",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "3",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "ControlPlane": "3 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/Harbor",
-    "name": "config.name  string  Harbor",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Harbor",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "2.24 %",
+      "mem.usage.average": "4.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Image-Builder OFED",
-    "name": "config.name  string  Image-Builder OFED",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 9 (64-bit)"
+    "name": "OFED",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 9 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Terraform/terraform-02",
-    "name": "config.name  string  terraform-02",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "terraform-02",
+    "power_state": "poweredOn",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "20.49 %",
+      "mem.usage.average": "31.00 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/wr1",
-    "name": "config.name  string  wr1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "wr1",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Getac-SQL",
-    "name": "config.name  string  Getac-SQL",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Microsoft Windows Server 2019 (64-bit)"
+    "name": "Getac-SQL",
+    "power_state": "poweredOn",
+    "guest_os": "Microsoft Windows Server 2019 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.94 %",
+      "mem.usage.average": "1.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/CA-Training/Scep - Training",
-    "name": "config.name  string  Scep - Training",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Microsoft Windows Server 2019 (64-bit)"
+    "name": "Training",
+    "power_state": "poweredOn",
+    "guest_os": "Microsoft Windows Server 2019 (64-bit)",
+    "metrics": {
+      "Training": "- %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/CP1",
-    "name": "config.name  string  CP1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "CP1",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Discovered virtual machine/RockyMainDC",
-    "name": "config.name  string  RockyMainDC",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "RockyMainDC",
+    "power_state": "poweredOn",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "1.04 %",
+      "mem.usage.average": "2.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/CA-Training/dc1",
-    "name": "config.name  string  dc1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Microsoft Windows Server 2019 (64-bit)"
+    "name": "dc1",
+    "power_state": "poweredOn",
+    "guest_os": "Microsoft Windows Server 2019 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "1.01 %",
+      "mem.usage.average": "3.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/MONGOD-02",
-    "name": "config.name  string  MONGOD-02",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "MONGOD-02",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/MONGOD-03",
-    "name": "config.name  string  MONGOD-03",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "MONGOD-03",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/BCM - Base Command Manager/BCM-10-1",
-    "name": "config.name  string  BCM-10-1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "BCM-10-1",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/CP3",
-    "name": "config.name  string  CP3",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "CP3",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/BCM - Base Command Manager/BCM-10-2",
-    "name": "config.name  string  BCM-10-2",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "BCM-10-2",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/Bootstrap",
-    "name": "config.name  string  Bootstrap",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "Bootstrap",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Proxmox",
-    "name": "config.name  string  Proxmox",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Proxmox",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/Bastion",
-    "name": "config.name  string  Bastion",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Bastion",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/MONGOD-01",
-    "name": "config.name  string  MONGOD-01",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "MONGOD-01",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/BCM - Base Command Manager/BCM-10-SLogin-1",
-    "name": "config.name  string  BCM-10-SLogin-1",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "BCM-10-SLogin-1",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Virtualized OpenShift Cluster/CP2",
-    "name": "config.name  string  CP2",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "CP2",
+    "power_state": "poweredOff",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Discovered virtual machine/Lidor-vCenter",
-    "name": "config.name  string  Lidor-vCenter",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Other 3.x or later Linux (64-bit)"
+    "name": "Lidor-vCenter",
+    "power_state": "poweredOn",
+    "guest_os": "Other 3.x or later Linux (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "6.79 %",
+      "mem.usage.average": "12.99 %"
+    }
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Discovered virtual machine/Ubuntu-Server-Template",
-    "name": "config.name  string  Ubuntu-Server-Template",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
-    "guest_os": "config.guestFullName  string  Ubuntu Linux (64-bit)"
+    "name": "Ubuntu-Server-Template",
+    "power_state": "poweredOff",
+    "guest_os": "Ubuntu Linux (64-bit)",
+    "metrics": {}
   },
   {
     "path": "/Deep-Learning Data-Center/vm/Discovered virtual machine/MainDeepLearning",
-    "name": "config.name  string  MainDeepLearning",
-    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
-    "guest_os": "config.guestFullName  string  Red Hat Enterprise Linux 8 (64-bit)"
+    "name": "MainDeepLearning",
+    "power_state": "poweredOn",
+    "guest_os": "Red Hat Enterprise Linux 8 (64-bit)",
+    "metrics": {
+      "cpu.usage.average": "0.02 %",
+      "mem.usage.average": "75.00 %"
+    }
   }
 ]
