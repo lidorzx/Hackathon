@@ -1,0 +1,354 @@
+[
+  {
+    "name": "config.name  string  testisoos",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "-0.01 %",
+    "mem.usage.average": "-0.01 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  terraform-01",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "10.26 %",
+    "mem.usage.average": "20.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  sub-ca",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.83 %",
+    "mem.usage.average": "3.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  terraform-04",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "3.84 %",
+    "mem.usage.average": "16.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu - Agent Worker 1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu-LoadBalancer",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "1.25 %",
+    "mem.usage.average": "0.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  HaProxy2",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.72 %",
+    "mem.usage.average": "0.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu - ControlPlane 2",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  terraform-05",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "12.85 %",
+    "mem.usage.average": "16.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu - ControlPlane 1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Arch",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  ubuntu partitiontest",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu-VM",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  wr2",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  KaliLinux",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.72 %",
+    "mem.usage.average": "0.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  terraform-03",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "16.78 %",
+    "mem.usage.average": "25.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  root-ca",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "2.79 %",
+    "mem.usage.average": "2.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu - Agent Worker 2",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  apache",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Test-ubuntu-mlxfw",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.54 %",
+    "mem.usage.average": "0.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu - ControlPlane 3",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Harbor",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "2.24 %",
+    "mem.usage.average": "3.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Image-Builder OFED",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  terraform-02",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "22.42 %",
+    "mem.usage.average": "32.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  wr1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Getac-SQL",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "1.25 %",
+    "mem.usage.average": "3.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Scep - Training",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  CP1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  RockyMainDC",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "1.50 %",
+    "mem.usage.average": "0.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  dc1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "1.43 %",
+    "mem.usage.average": "2.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  MONGOD-02",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  MONGOD-03",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  BCM-10-1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  CP3",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  BCM-10-2",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Bootstrap",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Proxmox",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Bastion",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  MONGOD-01",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  BCM-10-SLogin-1",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  CP2",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Lidor-vCenter",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "3.98 %",
+    "mem.usage.average": "12.99 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  Ubuntu-Server-Template",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOff",
+    "cpu.usage.average": "0.00 %",
+    "mem.usage.average": "0.00 %",
+    "risk": "\u2705 Healthy VM",
+    "recommendation": "No action needed."
+  },
+  {
+    "name": "config.name  string  MainDeepLearning",
+    "power_state": "runtime.powerState  types.VirtualMachinePowerState  poweredOn",
+    "cpu.usage.average": "0.03 %",
+    "mem.usage.average": "75.00 %",
+    "risk": "\u26a0\ufe0f Low CPU usage but high memory usage",
+    "recommendation": "Consider checking for memory leaks or idle services"
+  }
+]
