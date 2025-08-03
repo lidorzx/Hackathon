@@ -1,0 +1,5 @@
+torch
+vllm
+accelerate
+transformers
+sentencepiece

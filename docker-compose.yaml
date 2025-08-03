@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    command: >
+      --model /model
+      --served-model-name llama-3.3-70B-Instruct
+      --tensor-parallel-size 8
+      --host 0.0.0.0
+      --port 8000
+
+    volumes:
+      - /home/lidor/vLLM-Project/models/llama-3.3-70B-Instruct:/model
+    environment:
+      - NCCL_P2P_DISABLE=1
+      - NCCL_DEBUG=INFO
+      - USE_CUDA_DOCKER=true
+    ipc: host
+    network_mode: host
+    runtime: nvidia
+  
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:cuda
+    environment:
+      - PORT=3000
+      - OLLAMA_API_BASE_URL=http://10.160.99.220:8000
+      - EMBEDDING_MODEL_NAME=BAAI/bge-large-en-v1.5
+    volumes:
+      - /home/lidor/vLLM-Project/data:/app/backend/data
+    network_mode: host
+    depends_on:
+      - vllm
+
