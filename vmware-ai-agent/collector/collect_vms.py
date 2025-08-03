@@ -39,13 +39,28 @@ def get_vm_info():
                 "guest_os": guest.strip().split("\t")[-1]
             })
         else:
-            print(f"Failed to collect data for: {path}")
+            print(f"⚠️ Fallback to vm.info for: {path}")
+            info_json = run_govc_command(["vm.info", "-json", path])
+            if info_json:
+                try:
+                    info = json.loads(info_json)
+                    vm = info.get("VirtualMachines", [{}])[0]
+                    vm_data.append({
+                        "path": path,
+                        "name": vm.get("Name", "Unknown"),
+                        "power_state": vm.get("Runtime", {}).get("PowerState", "Unknown"),
+                        "guest_os": vm.get("Config", {}).get("GuestFullName", "Unknown")
+                    })
+                except json.JSONDecodeError:
+                    print(f"❌ JSON decode error for: {path}")
+            else:
+                print(f"❌ Failed to collect any data for: {path}")
 
     return vm_data
+
 
 if __name__ == "__main__":
     vms = get_vm_info()
     with open("vm_data.json", "w") as f:
         json.dump(vms, f, indent=2)
     print(f"\n✅ Collected info for {len(vms)} VMs.")
-
