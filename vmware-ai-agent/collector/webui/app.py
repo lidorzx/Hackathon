@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, jsonify
 import json
 import os
@@ -46,4 +47,3 @@ if __name__ == "__main__":
     t = threading.Thread(target=run_analysis_loop, daemon=True)
     t.start()
     app.run(debug=True)
-
