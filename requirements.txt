@@ -3,3 +3,4 @@ vllm
 accelerate
 transformers
 sentencepiece
+flask
