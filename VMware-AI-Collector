@@ -1,3 +1,6 @@
+sudo nano /etc/systemd/system/vm_collector.service
+
+
 [Unit]
 Description=VMware AI Collector
 After=network.target
