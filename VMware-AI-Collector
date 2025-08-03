@@ -1,0 +1,14 @@
+[Unit]
+Description=VMware AI Collector
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/lidor/Hackathon/vmware-ai-agent/collector
+ExecStart=/usr/bin/python3 /home/lidor/Hackathon/vmware-ai-agent/collector/collector.py
+Restart=always
+RestartSec=10
+User=lidor
+
+[Install]
+WantedBy=multi-user.target
