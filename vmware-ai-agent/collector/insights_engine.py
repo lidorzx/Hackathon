@@ -1,6 +1,7 @@
 import json
 import requests
 import os
+import re
 
 VLLM_API_URL = "http://localhost:8000/v1/chat/completions"
 VLLM_MODEL_NAME = "llama-3.3-70B-Instruct"
@@ -31,7 +32,9 @@ def generate_prompt(vm):
         f"- Guest OS: {vm.get('config.guestFullName', vm.get('guest_os', 'Unknown'))}\n"
         f"- CPU Usage: {vm.get('metrics', {}).get('cpu.usage.average', 'N/A')}\n"
         f"- Memory Usage: {vm.get('metrics', {}).get('mem.usage.average', 'N/A')}\n"
-        f"Give a short risk label and a recommendation."
+        f"Respond in the following format:\n"
+        f"**Risk Label:** <short risk label>\n"
+        f"**Recommendation:** <short, actionable recommendation>"
     )
 
 def analyze_vms():
@@ -44,38 +47,39 @@ def analyze_vms():
 
     report = []
     for vm in vm_data:
-        print(f"🧠 Analyzing: {vm.get('config.name', vm.get('name', 'Unknown'))}")
+        vm_name = vm.get('config.name', vm.get('name', 'Unknown'))
+        print(f"🧠 Analyzing: {vm_name}")
         prompt = generate_prompt(vm)
         insight = ask_llm(prompt)
 
-        # Build the report entry with basic metrics
+        # Build the report entry with base fields
         report_entry = {
-            "name": vm.get("config.name", vm.get("name", "Unknown")),
+            "name": vm_name,
             "power_state": vm.get("runtime.powerState", vm.get("power_state", "Unknown")),
             "cpu.usage.average": vm.get("metrics", {}).get("cpu.usage.average"),
             "mem.usage.average": vm.get("metrics", {}).get("mem.usage.average"),
         }
 
-        # Process LLM response
+        # Extract Risk and Recommendation from markdown-style AI response
         if insight:
-            if "recommendation" in insight.lower():
-                try:
-                    parts = insight.split("recommendation", 1)
-                    report_entry["risk"] = parts[0].strip().rstrip(":")
-                    report_entry["recommendation"] = parts[1].strip()
-                except Exception:
-                    report_entry["risk"] = insight.strip()
-                    report_entry["recommendation"] = "⚠️ Could not parse recommendation."
+            risk_match = re.search(r"\*\*Risk Label:\*\*\s*(.+)", insight)
+            rec_match = re.search(r"\*\*Recommendation:\*\*\s*(.+)", insight, re.DOTALL)
+
+            if risk_match and rec_match:
+                report_entry["risk"] = risk_match.group(1).strip()
+                report_entry["recommendation"] = rec_match.group(1).strip()
             else:
-                report_entry["risk"] = insight.strip()
-                report_entry["recommendation"] = "✅ No issues detected."
+                # Fallback: split by first newline
+                parts = insight.strip().split("\n", 1)
+                report_entry["risk"] = parts[0].strip()
+                report_entry["recommendation"] = parts[1].strip() if len(parts) > 1 else "⚠️ Could not parse recommendation."
         else:
             report_entry["risk"] = "⚠️ No response from model"
             report_entry["recommendation"] = "Ensure model is available or retry."
 
         report.append(report_entry)
 
-    # Write final report
+    # Write the analysis report
     with open(OUTPUT_REPORT_FILE, "w") as f:
         json.dump(report, f, indent=2)
 
@@ -83,4 +87,3 @@ def analyze_vms():
 
 if __name__ == "__main__":
     analyze_vms()
-
