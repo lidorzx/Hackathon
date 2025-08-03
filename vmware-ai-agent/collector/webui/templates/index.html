@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VMware AI Insights Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e2f;
+            color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00ffc8;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 0;
+            color: #ccc;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #2a2a40;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #00ffc8;
+            color: #000;
+        }
+
+        tr:hover {
+            background-color: #333;
+        }
+
+        .risk {
+            white-space: pre-line;
+            font-weight: bold;
+        }
+
+        .recommendation {
+            white-space: pre-line;
+        }
+
+        .risk-high {
+            color: #ff6b6b;
+        }
+
+        .risk-warning {
+            color: #ffa500;
+        }
+
+        .risk-ok {
+            color: #00ffc8;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 VMware AI Insights Dashboard</h1>
+    <p>Live updates every 30 seconds</p>
+
+    <label>
+        <input type="checkbox" id="show-risk-only"> Show only VMs with warnings or issues
+    </label>
+
+    <table id="vm-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Power</th>
+                <th>CPU</th>
+                <th>Memory</th>
+                <th>Risk</th>
+                <th>Recommendation</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('show-risk-only').addEventListener('change', loadData);
+
+        async function loadData() {
+            try {
+                const response = await fetch('/api/data');
+                const data = await response.json();
+
+                const tbody = document.querySelector('#vm-table tbody');
+                tbody.innerHTML = '';
+
+                const showRiskOnly = document.getElementById('show-risk-only').checked;
+
+                console.log(`✅ Loaded ${data.length} VMs`);
+                console.log(`🔍 Show only risky VMs: ${showRiskOnly}`);
+
+                data.forEach(vm => {
+                    const risk = vm.risk || "";
+                    const recommendation = vm.recommendation || "N/A";
+
+                    // Filter logic — skip only if toggle is on AND it's a healthy VM
+                    const isHealthy = risk.includes("✅");
+                    if (showRiskOnly && isHealthy) {
+                        return;
+                    }
+
+                    const row = document.createElement('tr');
+                    const cpu = vm["cpu.usage.average"] || "N/A";
+                    const mem = vm["mem.usage.average"] || "N/A";
+
+                    let riskClass = '';
+                    if (risk.includes("🔥")) {
+                        riskClass = 'risk-high';
+                    } else if (risk.includes("⚠️")) {
+                        riskClass = 'risk-warning';
+                    } else if (risk.includes("✅")) {
+                        riskClass = 'risk-ok';
+                    }
+
+                    row.innerHTML = `
+                        <td>${vm.name || 'Unknown'}</td>
+                        <td>${vm.power_state || 'Unknown'}</td>
+                        <td>${cpu}</td>
+                        <td>${mem}</td>
+                        <td class="risk ${riskClass}">${risk}</td>
+                        <td class="recommendation">${recommendation}</td>
+                    `;
+
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error("❌ Failed to load data:", error);
+            }
+        }
+
+        // Initial load and every 30 seconds
+        loadData();
+        setInterval(loadData, 30000);
+    </script>
+</body>
+</html>
+
